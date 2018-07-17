@@ -1,0 +1,487 @@
+:root {
+    --main-font-color: #777;
+    --decoration-color: #0ed8d6;
+    --decor-font: "Montserrat";
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+a,
+button,
+input,
+a:active,
+button:active,
+input:active,
+a:hover,
+button:hover,
+input:hover {
+    outline: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-nav {
+    color: white;
+    background-color: #0ed8d6;
+    z-index: 10;
+}
+
+.navbar .navbar-default .navbar-expand-lg .navbar-light .fixed-top:hover,
+.navbar .navbar-default .navbar-expand-lg .navbar-light .fixed-top.active {
+    color: #333;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+    color: #fff;
+    transition: color .3s ease;
+    font-size: 1.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0ed8d6;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #0ed8d6;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../header/pictures_on_the_wall.jpg);
+    height: 100vh;
+}
+
+header h2 {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+header p {
+    font-size: 8rem;
+    font-family: var(--decor-font);
+}
+
+#main-header .header-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.read-more {
+    color: #fff;
+    border-radius: 6px;
+    background: #0ed8d6;
+    transition: all .3s ease;
+    font-size: 1.6rem;
+    padding: 2rem;
+    border: 1px solid transparent;
+}
+
+.read-more:hover {
+    color: #0ed8d6;
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+#services {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#services .services-style h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: var(--decor-font);
+}
+
+#services .services-style p {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 8rem;
+    color: black;
+    font-style: italic;
+}
+
+.wrap {
+    position: relative;
+    text-align: center;
+}
+
+.wrap h2 {
+    margin-top: 2rem;
+}
+
+.wrap p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #777777;
+    margin-bottom: 3rem;
+}
+
+.wrap2 {
+    overflow: hidden;
+}
+
+.wrap2:hover .fot,
+  .wrap2:hover .img-mask {
+    transform: scale(1.5);
+    background-color: rgba(42, 61, 79, 0.5);
+    opacity: 1;
+}
+
+.full-wrap {
+    width: 350px;
+    height: 450px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.circle {
+    background: #0ed8d6;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #0ed8d6;
+}
+
+.circle:hover {
+    background-color: white;
+}
+
+.fas.fa-adjust,
+.fas.fa-briefcase,
+.far.fa-comments {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transform-origin: center center;
+    font-size: 100px;
+    transition: transform 0.5s linear;
+}
+
+.fas.fa-adjust:hover,
+  .fas.fa-briefcase:hover,
+  .far.fa-comments:hover {
+    transform: translate(-50%, -50%) rotate(360deg);
+    color: #0ed8d6;
+}
+
+.portfolio {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: gainsboro;
+}
+
+.portfolio-style h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: var(--decor-font);
+}
+
+.portfolio-style p {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 6rem;
+    color: black;
+    font-style: italic;
+}
+
+.img-mask {
+    background: rgba(42, 61, 79, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+}
+
+.img-mask:hover {
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+.fa-plus {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    padding: 120px;
+}
+
+.text {
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-right: 1rem;
+}
+
+.text h2 {
+    font-size: 2rem;
+    font-family: var(--decor-font);
+}
+
+.text p {
+    color: #777777;
+    font-size: 2rem;
+}
+
+.icon-plus {
+    background-image: url(../icon/plus-solid.svg);
+    color: white;
+}
+
+.fot {
+    width: 350px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fot1 {
+    background-image: url(../portfolio/chestnut_on_bracket.jpg);
+}
+
+.fot2 {
+    background-image: url(../portfolio/typing_on_laptop.jpg);
+}
+
+.fot3 {
+    background-image: url(../portfolio/child_with_blue_paint.jpg);
+}
+
+.fot4 {
+    background-image: url(../portfolio/chaotic_paint.jpg);
+}
+
+.fot5 {
+    background-image: url(../portfolio/house_with_blue_doors.jpg);
+}
+
+.fot6 {
+    background-image: url(../portfolio/box_of_cookies.jpg);
+}
+
+.team {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.our-team h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: var(--decor-font);
+}
+
+.our-team p {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10rem;
+    color: #777777;
+    font-style: italic;
+}
+
+.wrap2 {
+    position: relative;
+    text-align: center;
+}
+
+.wrap2 h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.wrap2 p {
+    font-size: 1.5rem;
+}
+
+.circle2 {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.circle2:hover {
+    background-color: white;
+}
+
+.team-icons a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    background: #000;
+    border-radius: 50%;
+    margin: 1rem;
+    margin-bottom: 4rem;
+}
+
+.team-icons a:hover {
+    background: #0ed8d6;
+}
+
+.team-icons i {
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.team-one {
+    background-image: url(../team/man-1.jpg);
+}
+
+.team-two {
+    background-image: url(../team/man-2.jpg);
+}
+
+.team-three {
+    background-image: url(../team/woman-1.jpg);
+}
+
+.team-text-down p {
+    text-align: center;
+    font-size: 2em;
+    color: #777777;
+    padding-top: 4rem;
+}
+
+#contact {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../footer/world-map.jpg) no-repeat, no-repeat;
+    color: #fff;
+    background-size: auto auto, cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+#contact p {
+    font-style: italic;
+}
+
+#contact .section-title {
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: var(--decor-font);
+}
+
+#contact .section-caption {
+    font-size: 2rem;
+    padding-bottom: 7rem;
+}
+
+#contact textarea {
+    resize: none;
+    height: 177px;
+}
+
+#contact input,
+#contact textarea {
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border: 0;
+    width: 100%;
+    font-size: 2.3rem;
+}
+
+#btn-form {
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.contact-icons i {
+    font-size: 3rem;
+}
+
+#main-footer {
+    background: #fff;
+    padding: 18px 0;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    background: #000;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.social-icons a:hover {
+    background: #0ed8d6;
+}
+
+.social-icons i {
+    font-size: 3rem;
+    margin: 1rem;
+}
