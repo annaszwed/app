@@ -180,6 +180,8 @@ header p {
     height: 450px;
     box-sizing: border-box;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circle {
